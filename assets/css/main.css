@@ -145,6 +145,92 @@ input, select, textarea {
     cursor: pointer;
 }
 
+/* Extracurriculars Styles */
+
+.extracurriculars-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.extracurricular-item {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white; /* Ensure text is visible on background images */
+}
+
+.extracurricular-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.extracurricular-content {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.extracurricular-content h3,
+.extracurricular-content h4,
+.extracurricular-content p {
+    margin: 0;
+}
+
+.extracurricular-content h3 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.extracurricular-content h4 {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.extracurricular-content p {
+    color: #ccc;
+}
+
+/* Optional: Add media queries for responsive design */
+@media (max-width: 768px) {
+    .extracurricular-item {
+        padding: 20px;
+    }
+
+    .extracurricular-content {
+        padding: 10px;
+    }
+}
+
+.container {
+    position: relative;
+    background: url('/Portfolio/images/mac.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Adjust the color and opacity */
+    z-index: 1; /* Ensures the overlay is above the background image */
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+}
+
+
+
 
 
 /* Basic */
@@ -2112,34 +2198,7 @@ assets/css/main.css
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-/* Loading Screen Styles */
-/* #loading-screen {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #080101;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
 
-#loading-screen.fade-out {
-    opacity: 0;
-}
-
-.handwriting {
-    width: 80%;
-    max-width: 600px;
-}
-
-#handwriting-text {
-    stroke-dasharray: 900;
-    stroke-dashoffset: 900;
-    animation: handwriting 5s ease-in-out ;
-}*/
 
 /* Ensure the video covers the entire screen */
 #loading-screen {
@@ -2235,6 +2294,12 @@ assets/css/main.css
     margin: 0;
     color: #777;
 }
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
 
 /* Optional: Add media queries for responsive design */
 @media (max-width: 768px) {
@@ -2972,3 +3037,4 @@ assets/css/main.css
 				}
 
 	}
+
