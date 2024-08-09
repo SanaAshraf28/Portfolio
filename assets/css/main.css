@@ -2698,7 +2698,7 @@ assets/css/main.css
 		/* Navigation */
 			#logo .image {
 				position: relative;
-				margin: 0 0 0.5em 0;
+				margin: 0 0 0.5em 1.5em;
 			}
 
 			/* Navigation */
@@ -2711,7 +2711,7 @@ assets/css/main.css
 			}
 		
 			#nav ul li {
-				margin: 0.5em 0;
+				margin: 0.5em 1.50em;
 			}
 		
 			#nav ul li a {
