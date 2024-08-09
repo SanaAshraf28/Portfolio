@@ -2559,8 +2559,9 @@ assets/css/main.css
 		
 					
 @media (max-width: 768px) {
+	/* Navigation */
 	#nav ul {
-		display: flex;
+		position: relative;
 		flex-direction: column;
 		align-items: center;
 		padding: 0;
@@ -2572,8 +2573,17 @@ assets/css/main.css
 
 	#nav ul li a {
 		padding: 0.5em 1em;
+		align-items: center;
+		justify-content: center;
 	}
+
+	#nav ul li a span {
+		margin-left: 10px; 
+	}
+
+	
 }
+
 					
 
 
@@ -2685,6 +2695,35 @@ assets/css/main.css
 				width: 300px;
 			}
 
+		/* Navigation */
+			#logo .image {
+				position: relative;
+				margin: 0 0 0.5em 0;
+			}
+
+			/* Navigation */
+			#nav ul {
+				position: relative;
+				margin-top: 10px;
+				flex-direction: column;
+				align-items: center;
+				padding: 0;
+			}
+		
+			#nav ul li {
+				margin: 0.5em 0;
+			}
+		
+			#nav ul li a {
+				padding: 0em 0em;
+				align-items: center;
+				justify-content: center;
+			}
+		
+			#nav ul li a span {
+				margin-left: 10px; 
+			}
+
 		/* Footer */
 
 			#footer {
@@ -2752,21 +2791,28 @@ assets/css/main.css
 				margin: 0 0 0.5em 0;
 			}
 
-			#nav ul li a {
-				font-size: 0.8em;
-				padding-top: 0.5em;
-				padding-bottom: 0.5em;
+			/* Navigation */
+			#nav ul {
+				position: relative;
+				margin-top: 10px;
+				flex-direction: column;
+				align-items: center;
+				padding: 0;
 			}
-
-				#nav ul li a span {
-					padding-right: 2.25em;
-				}
-
-					#nav ul li a span:before {
-						left: 100%;
-						margin-left: -1.25em;
-						line-height: 2.25em;
-					}
+		
+			#nav ul li {
+				margin: 0.5em 0;
+			}
+		
+			#nav ul li a {
+				padding: 0.5em 1em;
+				align-items: center;
+				justify-content: center;
+			}
+		
+			#nav ul li a span {
+				margin-left: 10px; 
+			}
 
 		/* Footer */
 
@@ -2820,6 +2866,29 @@ assets/css/main.css
 				width: 1.75em;
 				font-size: 1.25em;
 			}
+		
+		/* Navigation */
+			#nav ul {
+				margin-top: 70px;
+				position: relative;
+				flex-direction: column;
+				align-items: center;
+				padding: 0;
+			}
+		
+			#nav ul li {
+				margin: 0.5em 0;
+			}
+		
+			#nav ul li a {
+				padding: 0.5em 1em;
+				align-items: center;
+				justify-content: center;
+			}
+		
+			#nav ul li a span {
+				margin-left: 10px; 
+			}
 
 		/* Header */
 
@@ -2863,12 +2932,15 @@ assets/css/main.css
 				}
 
 			#logo {
-				margin: 1.5em 1.25em 1.25em 1.25em;
+				margin: 1.5em 3.25em 1.25em 0.25em ;
 			}
 
-			#nav ul li a {
-				padding: 0.5em 1.25em 0.5em 1.25em;
+			#logo .image {
+				position: relative;
+				margin: 0 0 0.5em 0;
 			}
+
+			
 
 			#headerToggle {
 				-moz-backface-visibility: hidden;
@@ -3004,6 +3076,7 @@ assets/css/main.css
 		/* List */
 
 			ul.icons a {
+				margin-bottom: 20em;
 				width: 2em;
 				font-size: 1.25em;
 			}

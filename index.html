@@ -24,12 +24,14 @@
 	
 	<body class="is-preload">
 		<!-- Loading Screen -->
-			<div id="loading-screen">
-				<video autoplay muted loop id="loading-video">
-					<source src="welcome.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
+		<div id="loading-screen">
+			<video autoplay muted loop id="loading-video">
+				<source src="welcome-large.mp4" type="video/mp4" media="(min-width: 1018px)">
+				<source src="welcome-medium.mp4" type="video/mp4" media="(min-width: 768px) and (max-width: 1023px)">
+				<source src="welcome-small.mp4" type="video/mp4" media="(max-width: 767px)">
+				<!-- Your browser does not support the video tag. -->
+			</video>
+		</div>
 
 		<!-- Header -->
 			<div id="header">
